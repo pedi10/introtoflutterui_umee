@@ -116,7 +116,7 @@ The `Scaffold` widget serves as the backbone of most Flutter pages, providing a 
     ```
 
 ## Step 3: Adding the App Logo
-
+![App Logo](assets/my-image.png)
 ### Concept in Flutter:
 In Flutter, images are added using the `Image` widget. To use local images, you must first add them to the project’s assets folder and declare them in the `pubspec.yaml` file under the `flutter > assets` section. This ensures Flutter knows where to find the image. The `Image.asset` widget is then used to display these assets in your UI.
 
