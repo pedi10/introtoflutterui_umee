@@ -5,30 +5,21 @@
 ---
 
 ## Table of Contents
-
 - [Essentials](#essentials)
-  - [Step 1: Setting Up the Initial Login Screen](#step-1-setting-up-the-initial-login-screen)
-    - [Concept in Flutter:](#concept-in-flutter)
-    - [Tasks:](#tasks)
-  - [Step 2: Creating the Page Structure](#step-2-creating-the-page-structure)
-    - [Concept in Flutter:](#concept-in-flutter-1)
-    - [Tasks:](#tasks-1)
-  - [Step 8: Adding Login Logic](#step-8-adding-login-logic)
-    - [Concept in Flutter:](#concept-in-flutter-2)
-    - [Tasks:](#tasks-2)
+    - [Step 1: Setting Up the Initial Login Screen](#step-1-setting-up-the-initial-login-screen)
+    - [Step 2: Creating the Page Structure](#step-2-creating-the-page-structure)
+    - [Step 3: Adding the App Logo](#step-3-adding-the-app-logo)
+    - [Step 4: Designing the Login Card](#step-4-designing-the-login-card)
+    - [Step 5: Adding Welcome Text](#step-5-adding-welcome-text)
+    - [Step 6: Creating Input Fields](#step-6-creating-input-fields)
+    - [Step 7: Implementing the Login Button](#step-7-implementing-the-login-button)
+    - [Step 8: Adding Login Logic](#step-8-adding-login-logic)
 - [Enhancements](#enhancements)
-  - [Step 9: Enhancing with a Background Image](#step-9-enhancing-with-a-background-image)
-    - [Concept in Flutter:](#concept-in-flutter-3)
-    - [Tasks:](#tasks-3)
-  - [Step 10: Optimizing the Login Card](#step-10-optimizing-the-login-card)
-    - [Concept in Flutter:](#concept-in-flutter-4)
-    - [Tasks:](#tasks-4)
-  - [Step 11: Adding "Remember Me" Feature](#step-11-adding-remember-me-feature)
-    - [Concept in Flutter:](#concept-in-flutter-5)
-    - [Tasks:](#tasks-5)
-  - [Step 12: Adding New Account Option](#step-12-adding-new-account-option)
-    - [Concept in Flutter:](#concept-in-flutter-6)
-    - [Tasks:](#tasks-6)
+    - [Step 9: Enhancing with a Background Image](#step-9-enhancing-with-a-background-image)
+    - [Step 10: Optimizing the Login Card](#step-10-optimizing-the-login-card)
+    - [Step 11: Adding "Remember Me" Feature](#step-11-adding-remember-me-feature)
+    - [Step 12: Adding New Account Option](#step-12-adding-new-account-option)
+
 ---
 
 # Essentials
@@ -119,8 +110,10 @@ The `Scaffold` widget serves as the backbone of most Flutter pages, providing a 
         );
     }
     ```
+
 4. Separate sections of the login page (e.g., logo, login form) into individual functions for better code organization. each function is placed after the build function and called within the column.
-    - Use `SizedBox` widget for spacing purpose.
+   
+- Use `SizedBox` widget for spacing purpose.
 
     ```dart
     @override
@@ -153,10 +146,6 @@ The `Scaffold` widget serves as the backbone of most Flutter pages, providing a 
     ```
 
 ## Step 3: Adding the App Logo
-<p>
-  <strong>Logo:</strong>
-  <img src="../assets/logo.png" alt="Project Logo" width="100">
-</p>
 
 <p>
   <strong>Logo:</strong>
@@ -461,7 +450,9 @@ The `TextEditingController` is used to retrieve and manage text input from `Text
     }
     ```
 ---
+
 # Enhancements
+
 ## Step 9: Enhancing with a Background Image
 
 <img src="../assets/login_bg.png" alt="Login Background" height="300">
