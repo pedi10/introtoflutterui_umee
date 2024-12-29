@@ -1,5 +1,5 @@
 <div style="background-color: #0553B1; color: white; text-align: center; padding: 20px;">
-    <h1>Order Management System Tutorial</h1>
+    <h1>Demo Project - Order Management System</h1>
 </div>
 
 ---
@@ -21,7 +21,7 @@
 
 This project demonstrates a simple order management system built with Flutter, featuring authentication, real-time data synchronization with Firebase, and location visualization using Google Maps. The application consists of two main screens: a Login page and a Dashboard page.
 
-Before starting, please review the [UI Reference Guide](ui_reference.md) which contains detailed explanations of Flutter widgets and components used throughout this project.
+Before starting, please review the [UI Reference Guide](tutorials/ui_reference.md) which contains detailed explanations of Flutter widgets and components used throughout this project.
 
 ## Project Structure
 
@@ -29,9 +29,9 @@ Before starting, please review the [UI Reference Guide](ui_reference.md) which c
 
 The Login Screen serves as the primary entry point to the application and provides user authentication functionality.
 
-![Login Screen](../assets/readme/Login.png)
+![Login Screen](assets/readme/Login.png)
 
-| Features | UI Design & Widgets |
+| Functionality Features | UI Design & Widgets |
 |----------|-------------------|
 | • Authentication gateway | • Container with image background |
 | • Custom background with logo | • Card widget with elevation and rounded corners |
@@ -48,7 +48,7 @@ The Dashboard Screen is the main operational hub of the application, providing a
 | ![Dashboard Screen](assets/readme/Dashboard%20Desktop.png) | ![Dashboard Phone](assets/readme/Dashboard%20Phone.png)|
 |--------------------------------|---------|
 
-| Features | UI Design & Widgets |
+| Functionality Features | UI Design & Widgets |
 |----------|-------------------|
 | • Real-time statistics using Firebase Firestore | • Scaffold with responsive layout |
 | • Order list with status indicators | • AppBar with custom actions |
@@ -62,7 +62,7 @@ The Dashboard Screen is the main operational hub of the application, providing a
 
 ## Getting Started
 
-1. Review the [UI Reference Guide](ui_reference.md) for your reference.
+1. Review the [UI Reference Guide](tutorials/ui_reference.md) for your reference.
 2. Create a Flutter project in your [Project IDX](https://idx.dev/).
 3. Follow the [Login Screen Walkthrough](tutorials/login_walkthrough.md) to create Login page step by step.
 4. Complete the [Dashboard Screen Walkthrough](tutorials/dashboard_walkthrough.md) to have a full running WebApp.
@@ -82,7 +82,7 @@ Password: root
     |----------|------|
     | Figma Design | [Order Management System UI](https://www.figma.com/design/yU1AdQLXjaeCcB0txnIlXW/Flutter-UI-Design-Workshop?node-id=179-136&t=5HALit4xttZgAwjr-1) |
     | App Logo | [assets/logo.png](assets/logo.png) |
-    | Login Background | [assets/login_bg.jpg](assets/login_bg.jpg) |
+    | Login Background | [assets/login_bg.png](assets/login_bg.png) |
 
 
 - Additional Resources
