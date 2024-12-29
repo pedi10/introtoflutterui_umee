@@ -153,6 +153,10 @@ The `Scaffold` widget serves as the backbone of most Flutter pages, providing a 
     ```
 
 ## Step 3: Adding the App Logo
+<p>
+  <strong>Logo:</strong>
+  <img src="../assets/logo.png" alt="Project Logo" width="100">
+</p>
 
 <p>
   <strong>Logo:</strong>
