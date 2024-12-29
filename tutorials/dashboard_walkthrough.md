@@ -6,6 +6,24 @@
 ### This guide create a Dashboard Page, connect it to Firebase and Google Maps for Data, and deploy to Firebase Hosting.
 ---
 
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [1. Preparation and Setup](#1-preparation-and-setup)
+  - [1.1 Package dependencies in pubspec.yaml](#11-package-dependencies-in-pubspecyaml)
+  - [1.2 Firebase project setup](#12-firebase-project-setup)
+    - [Creating Firebase project](#creating-firebase-project)
+    - [Adding flutter app](#adding-flutter-app)
+  - [1.3 Google Maps setup](#13-google-maps-setup)
+- [2. Run and Deploy WebApp](#2-run-and-deploy-webapp)
+  - [2.1 Copy the Code](#21-copy-the-code)
+  - [2.2 Run the App](#22-run-the-app)
+  - [2.3 Populate Data in Firestore](#23-populate-data-in-firestore)
+  - [2.4 Initialize Firebase Hosting](#24-initialize-firebase-hosting)
+  - [2.9 Deploy to Production](#29-deploy-to-production)
+
+---
+
 ## 1. Preparation and Setup
 
 ### 1.1 Package dependencies in pubspec.yaml
@@ -119,10 +137,15 @@ Below is the guide that is useful for workshop. Follow [Firebase x Flutter Offic
 
 ### 2.3 Populate Data in Firestore
 
-- Click on the menu icon in the top left corner to open the drawer. Select the "Add Dummy Data" item to generate data in your Firestore. 
-- Once you see the snackbar for succesful operation, you may close the drawer.
+- Click on the menu icon in the top left corner to open the drawer. 
 
-- Click on the Refresh icon button in the top right corner. The app should now display all the data.
+- Select the "Reset Summary" item to generate summary data in your Firestore. you should be able to see the summary cards now. 
+  
+- Select the "Add 20 Orders" item to generate order data in your Firestore. 
+
+- Close the drawer.
+
+- Click on the Refresh icon button in the top right corner. The app should now display order list and google maps.
 
 ### 2.4 Initialize Firebase Hosting
 
@@ -143,5 +166,3 @@ Below is the guide that is useful for workshop. Follow [Firebase x Flutter Offic
 - Wait for a while for terminal to build and deploy the project.
   
 - Get the deployment link from your terminal.
----
-If you wish to build Dashboard Page step by step, and learn more about each code and concept, visit [Dashboard Step by Step](dashboard_step_by_step.md)

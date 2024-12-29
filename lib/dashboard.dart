@@ -1,46 +1,4 @@
-/// A Dashboard page widget that displays various UI elements and data.
-///
-/// This widget includes:
-/// * An app bar with menu and logout buttons
-/// * A drawer menu for navigation
-/// * Overview section with greeting and summary cards
-/// * Details section with orders list and Google Maps
-///
-/// Main components:
-/// * [overview] - Displays greeting and summary statistics
-/// * [details] - Shows orders list and map view
-/// * [orderList] - Displays list of orders from Firestore
-/// * [googleMaps] - Shows order locations on Google Maps
-///
-/// Supporting widgets:
-/// * [summaryCard] - Card showing summary statistics, used by [overview]
-/// * [statusChip] - Chip showing order status, used by [orderList]
-/// * [ourDrawer] - Navigation drawer menu, used by [Scaffold]
-///
-/// Actions:
-/// * [addDummyData] - Adds sample order data to Firestore
-///
-/// Design constants:
-/// * [primaryColor] - Main brand color (0xff0553B1)
-/// * [secondaryColor] - Secondary brand color (0xff042B59)
-/// * [backgroundColor] - Background color (0xffE6F1FF)
-/// * [accentColor] - Accent color (0xffF57C00)
-/// * [mobilePadding] - Padding for mobile view
-/// * [desktopPadding] - Padding for desktop view
-///
-/// Firebase integration:
-/// * Uses Firestore to store and retrieve order data
-/// * Streams order summaries from 'summaries' collection
-/// * Stores order details in 'orders' collection
-///
-/// Responsive Design:
-/// * Adapts layout based on screen width (<800px = mobile view)
-/// * Different layouts for mobile/desktop for better UX
-///
-/// Navigation:
-/// * Can navigate to Login page
-/// * Has drawer menu for additional navigation options
-// ignore_for_file: sized_box_for_whitespace, use_build_context_synchronously, prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, use_build_context_synchronously
 
 import 'dart:async';
 import 'dart:math';
@@ -657,12 +615,12 @@ class _DashboardPageState extends State<DashboardPage> {
           // Line Divider
           const Divider(),
 
-          // Reset Dummy Data
+          //Add 20 Order Data
           ListTile(
             leading: const Icon(Icons.refresh_rounded, color: primaryColor),
             title: const Text('Add 20 Orders'),
             onTap: () {
-              manytDummyData();
+              twentyDummyData();
             },
           ),
 
@@ -796,7 +754,7 @@ class _DashboardPageState extends State<DashboardPage> {
   }
 
   // Add Dummy Data to orders and summaries collections
-  void manytDummyData() {
+  void twentyDummyData() {
     // Populate new data
     // Dictionary of destinations with corresponding latitude and longitude
     final Map<String, List<double>> destinations = {

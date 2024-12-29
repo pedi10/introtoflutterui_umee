@@ -8,6 +8,21 @@
 
 ---
 
+## Table of Contents
+
+1. [DRY (Don't Repeat Yourself)](#1-dry-dont-repeat-yourself)
+2. [Structure](#2-structure)
+3. [Drawer](#3-drawer)
+4. [AppBar](#4-appbar)
+5. [Main Layout of the Page](#5-main-layout-of-the-page)
+6. [Main Widgets - Overview Widget](#6-main-widgets---overview-widget)
+7. [Statistics Cards - StreamBuilder & SummaryCards](#7-statistics-cards---streambuilder--summarycards)
+8. [Main Widgets - Details Widgets](#8-main-widgets---details-widgets)
+9. [OrderList](#9-orderlist)
+10. [Google Map](#10-google-map)
+    
+- [Action Functions](#-Action-Functions)
+---
 
 It is also assumed you have already imported `material` package and created a `StatefulWidget` named `DashboadPage` from the previous tutorials. if you haven't, please do the needful and continue with the rest below.
 
@@ -50,6 +65,8 @@ class _DashboardPageState extends State<DashboardPage> {
 
 
 ## 3. Drawer
+
+<img src="../assets/tutorial_dashboard/drawer.png" alt="Drawer" height="500">
 
 The `Drawer` is a slide-in menu typically used for navigation within an app. It can contain a variety of widgets, such as `ListTile` for navigation options, images, and other UI elements.
 
@@ -129,12 +146,12 @@ Widget ourDrawer() {
           // Line Divider
           const Divider(),
 
-          // Reset Dummy Data
+          // Add 20 Order Data
           ListTile(
             leading: const Icon(Icons.refresh_rounded, color: primaryColor),
             title: const Text('Add 20 Orders'),
             onTap: () {
-              manytDummyData();
+              twentyDummyData();
             },
           ),
 
@@ -213,6 +230,8 @@ class _DashboardPageState extends State<DashboardPage> {
 Drawer in Flutter cannot open itself automatically without some form of user interaction or programmatic trigger. Therefore, will we need a button in header to open this. This will be achieved in `AppBar` next.
 
 ## 4. AppBar
+
+![AppBar](../assets/tutorial_dashboard/AppBar.png)
 
 The `AppBar` is a material design app bar that can be used to display a title, navigation icons, and other actions. It is typically used in the `Scaffold` widget to provide a consistent header across different screens of the app.
 
@@ -308,6 +327,8 @@ actions: [
 ```
 
 ## 5. Main Layout of the Page
+
+![main_layout](../assets/tutorial_dashboard/main_layout.png)
 
 The layout of the page is defined in the `body` of the `Scaffold`. We use a `Container` to take up the full screen width and height, with consideration for the `AppBar` height. To achieve this, we use `MediaQuery.of(context).size.height - 60`.
 
@@ -540,6 +561,8 @@ In our code, we use `StreamBuilder` to fetch summary data from the 'summaries' c
 
 ### 7.3 SummaryCards
 
+![summary_card](../assets/tutorial_dashboard/summary_card.png)
+
 The `summaryCard` function creates a card widget that displays summary statistics. It uses a `Column` to organize the title, icon, value, and trending icon.
 
 - The `summaryCard` function uses a `Column` with two `Row` widgets. The first `Row` contains the title and icon, while the second `Row` contains the value and trending icon. This layout could also be achieved by using `Row` instead of `Column`, with left side to hold a `Column` of Title and `Row` of value and trending icon, and right side for the blue icon.
@@ -724,6 +747,8 @@ The `ListView.builder` is a powerful widget in Flutter that allows for the effic
     - The function returns a widget that represents a single item in the list.
 
 ### 9.2 Building Each Item
+
+![list_item](../assets/tutorial_dashboard/list_item.png)
 
 The `itemBuilder` function is responsible for constructing each item in the list. Here is a breakdown of its implementation:
 
@@ -921,7 +946,7 @@ Widget googleMaps(orders) {
 The `addDummyData` function is used to add a single dummy order to the Firestore database. It generates random order details, including order ID, description, destination, status, and coordinates, and then adds this data to the 'orders' collection in Firestore.
 
 ### 10.2 Adding Multiple Dummy Data
-The `manytDummyData` function is designed to populate the Firestore database with multiple dummy orders. It generates 20 random orders with varying details and adds them to the 'orders' collection, providing a bulk data addition for testing purposes.
+The `twentyDummyData` function is designed to populate the Firestore database with multiple dummy orders. It generates 20 random orders with varying details and adds them to the 'orders' collection, providing a bulk data addition for testing purposes.
 
 ### 10.3 Resetting Summary Data
 The `resetSummary` function resets the summary statistics in the Firestore database. It sets predefined values for total orders, today's orders, delivered orders, and customers in the 'summaries' collection, ensuring the summary data is consistent and up-to-date.

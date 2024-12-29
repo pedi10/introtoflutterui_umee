@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
-import 'package:flutter_workshop/dashboard.dart';
+import 'dashboard.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -22,20 +22,25 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        // Screen size width & height
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
+          // background of Container
           image: DecorationImage(
             image: AssetImage('/login_bg.png'),
             fit: BoxFit.cover,
           ),
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            // Logo
             logoImage(),
+            // Space
             const SizedBox(height: 20),
+            // Login form Card
             loginCard(),
           ],
         ),
@@ -57,13 +62,14 @@ class _LoginPageState extends State<LoginPage> {
       elevation: 3,
       child: Container(
         //width: 400,
+        // Condition based container width based on the width of screen
         width: (MediaQuery.of(context).size.width < 800)
             ? MediaQuery.of(context).size.width * 0.8
             : MediaQuery.of(context).size.width * 0.4,
         padding: const EdgeInsets.all(20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             welcomeTexts(),
             const SizedBox(height: 40),
@@ -193,10 +199,7 @@ class _LoginPageState extends State<LoginPage> {
 
   // Login Logic
   void loginLogic() {
-    String email = emailController.text;
-    String password = passwordController.text;
-
-    if (email == 'admin' && password == 'root') {
+    if (emailController.text == 'admin' && passwordController.text == 'root') {
       // Succesfful Feedback
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
