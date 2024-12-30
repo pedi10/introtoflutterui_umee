@@ -174,6 +174,9 @@ The `Image.asset` widget is then used to display these assets in your UI.
 
 ### Tasks:
 1. Create an `assets` folder in your project’s root directory and place the logo image in the `assets` folder.
+
+![step3](../assets/tutorial_login/step3.png)
+
 2. Update the `pubspec.yaml` file by specifying the image path under `flutter > assets`. If you look at your `pubspec.yaml` file, usually in line number 61-64, you'll find a commented section that shows where to add assets. By default, it looks like this:
 
     ```yaml
