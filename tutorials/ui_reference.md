@@ -60,14 +60,12 @@ Expanded
 </a>
 </td>
 <td width="25%">
-<a href="#wrap">
+<a href="#singlechildscrollview">
 <!-- <img src="../assets/ui_reference/wrap.png" alt="wrap" width="150" height="100" style="object-fit: cover;"><br> -->
 Single Child Scroll View
 </a>
 </td>
 <td width="25%">
-<a href="#singlechildscrollview">
-<!-- <img src="../assets/ui_reference/expanded.png" alt="expanded" width="150" height="100" style="object-fit: cover;"><br> -->
 </td>
 </table>
 
