@@ -200,7 +200,7 @@ The `Image.asset` widget is then used to display these assets in your UI.
 
     ```yaml
     flutter:
-    assets:
+      assets:
         - assets/logo.png
     ```
 
